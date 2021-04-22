@@ -1,3 +1,7 @@
+[![CircleCI](circleci.com/gh/mpomaran/landlord.svg?style=svg)](https://app.circleci.com/pipelines/github/mpomaran/landlord)
+
+https://app.circleci.com/pipelines/github/mpomaran/landlord
+
 # landlord
 DDD showcase project with problem space analysis, system design and various patterns.
 
