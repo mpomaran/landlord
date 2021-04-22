@@ -1,5 +1,5 @@
-[![CircleCI](circleci.com/gh/mpomaran/landlord.svg?style=svg)](https://app.circleci.com/pipelines/github/mpomaran/landlord)
-[![Code Coverage](https://codecov.io/gh/mpomaran/landlord/branch/master/graph/badge.svg)](https://codecov.io/gh/mpomaran/landlord)
+[![CircleCI](https://circleci.com/gh/mpomaran/landlord.svg?style=svg&circle-token=fc8c6182b4db3ca2595bee6a565e34ccb7d9ed1f)](https://app.circleci.com/pipelines/github/mpomaran/landlord)
+[![codecov](https://codecov.io/gh/mpomaran/landlord/branch/main/graph/badge.svg?token=ZJZ83GC7UC)](https://codecov.io/gh/mpomaran/landlord)
 
 # landlord
 DDD showcase project with problem space analysis, system design and various patterns.
