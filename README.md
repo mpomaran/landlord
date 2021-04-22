@@ -90,9 +90,36 @@ For each apartment, the landlord is able to see a list of things to fix, as well
 
 ### BDD  
 Tests are written in a BDD manner, expressing stories defined with Example Mapping.
-It means we utilize both TDD and Domain Language discovered with Event Storming.
+It means I utilize both TDD and Domain Language discovered with Event Storming.
 
 ### ArchUnit
+The issue with the growing project is to make sure it follows the vision and, especially when it’s written as a monolith. The danger to avoid is a big ball of mud, with a lack of perceivable design. There are at least three methods to keep the architecture clean and aligned to the design: code review, java modules, and automatic architecture tests.
+
+Here I will focus on [ArchUnit](https://www.archunit.org/).
+
+ArchUnit is a tool that allows you to test the architecture in an easy-to-follow manner. For example, keeping layers (hexagon levels) of abstraction separate can be enforced as follows:
+
+```java 
+@ArchTest
+public static final ArchRule model_should_not_depend_on_infrastructure =
+    noClasses()
+        .that()
+        .resideInAPackage("..model..")
+        .should()
+        .dependOnClassesThat()
+        .resideInAPackage("..infrastructure..");
+```      
+and that frameworks do not affect the domain model
+```java
+@ArchTest
+public static final ArchRule model_should_not_depend_on_spring =
+    noClasses()
+        .that()
+        .resideInAPackage("..io.pillopl.library.lending..model..")
+        .should()
+        .dependOnClassesThat()
+        .resideInAPackage("org.springframework..");
+```  
 
 ## References
 
@@ -101,3 +128,4 @@ It means we utilize both TDD and Domain Language discovered with Event Storming.
 3. [Software Architecture for Developers](https://softwarearchitecturefordevelopers.com) by Simon Brown
 4. [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164) by Robert C. Martin
 5. [Domain-Driven Design: Tackling Complexity in the Heart of Software](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) by Eric Evans
+6. [A comprehensive Domain-Driven Design example](https://github.com/ddd-by-examples/library)  
