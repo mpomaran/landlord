@@ -14,35 +14,41 @@ order might be changed, and some chapters will be dropped
 2. [Domain description](#domain-description)
 3. [General assumptions](#general-assumptions)
 4. [System design](#system-design)  
-  4.1 [Process discovery](#process-discovery)  
-  4.2 [Solving ambiguity](#solving-ambiguity)  
-  4.3 [Interfaces with other systems](#interfaces-with-other-systems)  
-   &emsp;   4.3.1 [Payment system](#payment-system)  
-   &emsp;   4.3.2 [Protocols and their performance](#protocols-and-their-performance)  
-  4.4 [Logical design details](#logical-design-details)  
-   &emsp;   4.4.1 [Spring](#spring)  
-   &emsp;   4.4.2 [Project structure and architecture](#project-structure-and-architecture)  
-   &emsp;&emsp;   4.4.2.1 [Aggregates](#aggregates)  
-   &emsp;&emsp;   4.4.2.2 [Events](#events)  
-   &emsp;&emsp;   4.4.2.3 [Events in Repositories](#events-in-repositories)  
-   &emsp;&emsp;   4.4.2.4 [Database](#database)  
-   &emsp;&emsp;&emsp;     4.4.2.4.1 [ORM](#orm)  
-   4.5 [Physical code design details](#physical-code-design-details)  
-   &emsp;   4.5.1 [Architecture-code gap](#architecture-code-gap)    
-   &emsp;   4.5.2 [Model-code gap](#model-code-gap)  
-   4.6 [Deployment](#deployment)  
-   4.7 [Fault tolerance](#fault-tolerance)
+  4.1. [Process discovery](#process-discovery)  
+  4.2. [Solving ambiguity](#solving-ambiguity)  
+  4.3. [Interfaces with other systems](#interfaces-with-other-systems)  
+   &emsp;   4.3.1. [Payment system](#payment-system)  
+   &emsp;   4.3.2. [Protocols and their performance](#protocols-and-their-performance)  
+  4.4. [Logical design details](#logical-design-details)  
+   &emsp;   4.4.1. [Spring](#spring)  
+   &emsp;   4.4.2. [Project structure and architecture](#project-structure-and-architecture)  
+   &emsp;&emsp;   4.4.2.1. [Aggregates](#aggregates)  
+   &emsp;&emsp;   4.4.2.2. [Events](#events)  
+   &emsp;&emsp;   4.4.2.3. [Events in Repositories](#events-in-repositories)  
+   &emsp;&emsp;   4.4.2.4. [Database](#database)  
+   &emsp;&emsp;&emsp;     4.4.2.4.1. [ORM](#orm)  
+   4.5. [Physical code design details](#physical-code-design-details)  
+   &emsp;   4.5.1. [Architecture-code gap](#architecture-code-gap)    
+   &emsp;   4.5.2. [Model-code gap](#model-code-gap)  
+   4.6. [Deployment](#deployment)  
+   4.7. [Fault tolerance](#fault-tolerance)
 5. [Performance](#performance)  
-   5.1 [Back of the envelope calculations](#back-of-the-envelope-calculations)  
-   5.1 [Scalability](#scalability)  
-   5.2 [Monitoring](#monitoring)
+   5.1. [Back of the envelope calculations](#back-of-the-envelope-calculations)  
+   5.2. [Scalability](#scalability)  
+   5.3. [Monitoring](#monitoring)
 6. [Security](#security)  
-   6.1 [Measures](#measures)  
+   6.1. [Measures](#measures)  
    6.2. [Preventing attacks - discussion](#preventing-attacks---discussion)
 7. [Ways to improve, next phases](#ways-to-improve-next-phases)    
 8. [Tests](#tests)    
-   7.1 [BDD](#bdd)  
-   7.2 [ArchUnit](#archunit)
+   7.1. [BDD](#bdd)  
+   7.2. [ArchUnit](#archunit)
+9. [How to run](#how-to-run)   
+    9.1. [Requirements](#equirements)  
+    9.2. [Building the code](#building-the-code)  
+    9.3. [Running](#running)  
+    9.4. [Collecting metrics](#collecting-metrics)  
+10. [References](#references)
      
 ## About
 
@@ -219,7 +225,21 @@ public static final ArchRule model_should_not_depend_on_spring =
         .should()
         .dependOnClassesThat()
         .resideInAPackage("org.springframework..");
-```  
+```
+## How to run
+
+### Requirements
+- Java 11
+- Gradle
+
+### Building the code
+```bash
+$ ./gradlew build 
+```
+
+### Running
+
+### Collecting metrics
 
 ## References
 
