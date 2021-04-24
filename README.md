@@ -100,6 +100,11 @@ The next step was the detailed process modelling:
 The result of modelling is captured here:
 ![Process modelling](docs/images/Event-Storming-Process-modelling.png)
 
+The next step was [example mapping](https://cucumber.io/blog/bdd/example-mapping-introduction/). I added this step in order to help me with
+defining business scenarios, tests for them and come up with the prioritized task list.
+
+The result of the mapping is here: ![Example mapping](docs/images/example-mapping.png)
+
 After this step I was ready to answer the following questions:
 - What aggregates were discovered?
 - Which bounded contexts are discovered?
