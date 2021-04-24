@@ -44,7 +44,7 @@ order might be changed, and some chapters will be dropped
    7.1. [BDD](#bdd)  
    7.2. [ArchUnit](#archunit)
 9. [How to run](#how-to-run)   
-    9.1. [Requirements](#equirements)  
+    9.1. [Requirements](#requirements)  
     9.2. [Building the code](#building-the-code)  
     9.3. [Running](#running)  
     9.4. [Collecting metrics](#collecting-metrics)  
