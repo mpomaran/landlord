@@ -43,5 +43,5 @@ jobs:
 
       # Upload code coverage
       - run:
-          name: Run rests and Upload code coverage report
+          name: Upload code coverage report
           command: bash <(curl -s https://codecov.io/bash) -t 4bb00237-64ea-4115-9c07-9df67ec7ba63
