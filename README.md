@@ -78,10 +78,10 @@ For each apartment, the landlord is able to see a list of things to fix, as well
 Process discovery was performed using the Event Storming technique (with the help of the Miro's [Event Storming](https://miro.com/miroverse/event-storming) template).
 
 The first step of the event storming, collecting domain events is captured here:
-![Domain events](docs/images/Big-Picture-step-1.png)
+![Domain events](docs/images/Event-Storming-Big-Picture-step-1.png)
 
 After some refinement board looks like this:
-![Domain events refined](docs/images/Big-Picture-step-2.png)
+![Domain events refined](docs/images/Event-Storming-Big-Picture-step-2.png)
 
 The next step was the detailed process modelling:
 - actors
@@ -92,7 +92,7 @@ The next step was the detailed process modelling:
 - automatic domain events
 
 The result of modelling is captured here:
-![Process modelling](docs/images/Process-modelling.png)
+![Process modelling](docs/images/Event-Storming-Process-modelling.png)
 
 After this step I was ready to answer the following questions:
 - What aggregates were discovered?
@@ -105,7 +105,7 @@ After this step I was ready to answer the following questions:
 - Which policies call up which new commands?
 
 It leads to the last step of the event storming, software modelling, and the result is:
-![Software modelling](docs/images/Software-modelling.png)
+![Software modelling](docs/images/Event-Storming-Software-modelling.png)
 
 ### Solving ambiguity
 <b>Event storming clears out ambiguity</b>
