@@ -89,6 +89,23 @@ The first step of the event storming, collecting domain events is captured here:
 After some refinement board looks like this:
 ![Domain events refined](docs/images/Event-Storming-Big-Picture-step-2.png)
 
+The next step was [example mapping](https://cucumber.io/blog/bdd/example-mapping-introduction/). I added this step in order to help me with
+defining business scenarios, tests for them and come up with the prioritized task list.
+
+The example mapping did not end with all possible examples as this is only a demo project, and it contains
+enough to proceed with the further design. However inte
+
+The result of the mapping is here: ![Example mapping](docs/images/example-mapping.png)
+
+The example mapping did not end with all possible examples as this is only a demo 
+project, and it contains enough to proceed with the further design.
+
+However, the example mapping shed much more light on the domain and makes me think about 
+the landlord as a simple glue logic between ticketing system, payment system, 
+and the property browser system. This in turn leads to another step of event storming.
+
+<em> Refinement pt 2 goes here </em>
+
 The next step was the detailed process modelling:
 - actors
 - commands
@@ -100,10 +117,6 @@ The next step was the detailed process modelling:
 The result of modelling is captured here:
 ![Process modelling](docs/images/Event-Storming-Process-modelling.png)
 
-The next step was [example mapping](https://cucumber.io/blog/bdd/example-mapping-introduction/). I added this step in order to help me with
-defining business scenarios, tests for them and come up with the prioritized task list.
-
-The result of the mapping is here: ![Example mapping](docs/images/example-mapping.png)
 
 After this step I was ready to answer the following questions:
 - What aggregates were discovered?
@@ -256,3 +269,4 @@ $ ./gradlew build
 6. [A comprehensive Domain-Driven Design example](https://github.com/ddd-by-examples/library)
 7. [Java SE Platform Security Architecture](https://docs.oracle.com/en/java/javase/11/security/java-se-platform-security-architecture.html)
 8. [Unit Test Your Architecture with ArchUnit](https://blogs.oracle.com/javamagazine/unit-test-your-architecture-with-archunit)
+9. [Example
