@@ -92,19 +92,13 @@ After some refinement board looks like this:
 The next step was [example mapping](https://cucumber.io/blog/bdd/example-mapping-introduction/). I added this step in order to help me with
 defining business scenarios, tests for them and come up with the prioritized task list.
 
-The example mapping did not end with all possible examples as this is only a demo project, and it contains
-enough to proceed with the further design. However inte
-
 The result of the mapping is here: ![Example mapping](docs/images/example-mapping.png)
 
-The example mapping did not end with all possible examples as this is only a demo 
-project, and it contains enough to proceed with the further design.
+I did not exhaust all scenarios, and in the real world I would not consider this step as completed, 
+however it allows me to continue with the demo project and, interestingly shows possible changes in the domain description.
+Which leads to yet another domain event session:
 
-However, the example mapping shed much more light on the domain and makes me think about 
-the landlord as a simple glue logic between ticketing system, payment system, 
-and the property browser system. This in turn leads to another step of event storming.
-
-<em> Refinement pt 2 goes here </em>
+![Domain events refined again](docs/images/Event-Storming-Big-Picture-step-2.1.png)
 
 The next step was the detailed process modelling:
 - actors
@@ -116,7 +110,6 @@ The next step was the detailed process modelling:
 
 The result of modelling is captured here:
 ![Process modelling](docs/images/Event-Storming-Process-modelling.png)
-
 
 After this step I was ready to answer the following questions:
 - What aggregates were discovered?
